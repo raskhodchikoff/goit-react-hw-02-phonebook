@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Form } from 'formik';
+import { Form, Field } from 'formik';
 
 export const Label = styled.label`
   font-weight: ${p => p.theme.fontWeights[4]};
@@ -19,6 +19,11 @@ export const FormBox = styled(Form)`
   padding: ${p => p.theme.space[4]}px;
   border: ${p => `${p.theme.borders.m} ${p.theme.colors.greyBorder}`};
   border-radius: ${p => p.theme.radii.m};
+`;
+
+export const Input = styled(Field)`
+  border: ${p => `${p.theme.borders.m} ${p.theme.colors.greyBorder}`};
+  border-radius: ${p => p.theme.radii.s};
 `;
 
 export const Button = styled.button`

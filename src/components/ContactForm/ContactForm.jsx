@@ -1,7 +1,7 @@
-import { Formik, Field, ErrorMessage } from 'formik';
+import { Formik, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import { PropTypes } from 'prop-types';
-import { Button, Label, FormBox } from './ContactForm.styled';
+import { Button, Label, FormBox, Input } from './ContactForm.styled';
 
 const nameRegex = /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
 const phoneRegex =
@@ -38,12 +38,12 @@ export const ContactForm = ({ onSubmit }) => {
       <FormBox autoComplete="off">
         <Label htmlFor="name">
           <span>Name</span>
-          <Field type="text" name="name" placeholder="Enter name" />
+          <Input type="text" name="name" placeholder="Enter name" />
           <ErrorMessage name="name" component="div" />
         </Label>
         <Label>
           <span>Number</span>
-          <Field type="tel" name="number" placeholder="Enter phone number" />
+          <Input type="tel" name="number" placeholder="Enter phone number" />
           <ErrorMessage name="number" component="div" />
         </Label>
         <Button type="submit">Add contact</Button>
