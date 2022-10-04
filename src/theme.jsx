@@ -9,7 +9,7 @@ export const theme = {
 
   breakpoints: ['480px', '768px', '1024px', '1440px'],
 
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
   fonts: {
     body: 'system-ui, sans-serif',
