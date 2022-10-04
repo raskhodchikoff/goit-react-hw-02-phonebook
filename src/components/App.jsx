@@ -65,9 +65,9 @@ export class App extends Component {
         width="400px"
         p={5}
         bg="mainBgr"
-        border="s"
-        borderRadius="s"
-        borderColor="blackFont"
+        border="m"
+        borderRadius="m"
+        borderColor="greyBorder"
         boxShadow="shadow"
       >
         <Box as="section" mb={3}>
