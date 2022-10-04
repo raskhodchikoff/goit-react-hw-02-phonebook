@@ -17,6 +17,7 @@ export const Button = styled.button`
   padding: 3px;
   border: ${p => `${p.theme.borders.m} ${p.theme.colors.greyBorder}`};
   border-radius: ${p => p.theme.radii.s};
+  box-shadow: ${p => p.theme.shadows.shadow};
 
   :hover {
     background-color: ${p => p.theme.colors.btnHover};
