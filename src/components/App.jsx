@@ -17,7 +17,9 @@ export class App extends Component {
     filter: '',
   };
 
-  formSubmitHandler = data => {
+  formSubmitHandler = (data, { resetForm }) => {
+    resetForm();
+
     data.id = nanoid();
     const contacts = this.state.contacts;
     const doubleName = contacts.find(
